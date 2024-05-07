@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - Берсерк</title>
+    <link rel="stylesheet" href="Dien.css"> <!-- Подключение CSS стилей -->
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <nav>
+        <ul>
+            <li><a href="Dien.html">Главная</a></li>
+            <li><a href="character.html">Персонажи</a></li>
+            <li><a href="plot.html">Сюжет</a></li>
+            <li><a href="store.html">Магазин</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <header>
+        <h1>Магазин манги и аниме "Берсерк"</h1>
+    </header>
+
+    <section class="filters">
+        <input type="text" id="searchInput" placeholder="Поиск по товарам">
+        <select id="categoryFilter">
+            <option value="all">Все категории</option>
+            <option value="manga">Манга</option>
+            <option value="anime">Аниме</option>
+            <option value="merch">Мерчандайз</option>
+        </select>
+        <button onclick="applyFilters()">Применить</button>
+    </section>
+
+
+
+    <!-- Секция с товарами -->
+    <section class="store-section">
+        <div class="product" data-category="manga">
+            <img src="manber.jpg" alt="Товар 1">
+            <h2>Берсерк том №1</h2>
+            <p class="price">$15</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Товар 1', 50)">Добавить в корзину</button>
+        </div>
+        <div class="product" data-category="manga">
+            <img src="manber2.jpeg" alt="Товар 1">
+            <h2>Берсерк том №2</h2>
+            <p class="price">$15</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Товар 1', 50)">Добавить в корзину</button>
+        </div>
+        <div class="product" data-category="manga">
+            <img src="manber3.jpg" alt="Товар 1">
+            <h2>Берсерк том №3</h2>
+            <p class="price">$15</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Товар 1', 50)">Добавить в корзину</button>
+        </div>
+        <div class="product" data-category="manga">
+            <img src="miura_kentaro_berserk_tom_4.jpg" alt="Товар 1">
+            <h2>Берсерк том №4</h2>
+            <p class="price">$15</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Товар 1', 50)">Добавить в корзину</button>
+        </div>
+    </section>
+    <section class="store-section">
+        <div class="product" data-category="anime">
+            <img src="Bluraybe.jpg" alt="Товар 1">
+            <h2>Берсерк блю-рей</h2>
+            <p class="price">$42</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Берсерк блю-рей ', 42)">Добавить в корзину</button>
+        </div>
+        <div class="product" data-category="merch">
+            <img src="61wBR7kx98L._AC_UF894,1000_QL80_.jpg" alt="Товар 1">
+            <h2>Товар 1</h2>
+            <p class="price">$50</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Товар 1', 50)">Добавить в корзину</button>
+        </div>
+        <div class="product" data-category="merch">
+            <img src="berserk-merch-berserk-skull-clothing.jpg" alt="Товар 1">
+            <h2>Товар 1</h2>
+            <p class="price">$50</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Товар 1', 50)">Добавить в корзину</button>
+        </div>
+        <div class="product" data-category="merch">
+            <img src="2_5a050fce-9c31-4f39-8818-65d2638da752.webp" alt="Товар 1">
+            <h2>Товар 1</h2>
+            <p class="price">$50</p>
+            <p class="description">Описание товара...</p>
+            <button onclick="addToCart('Товар 1', 50)">Добавить в корзину</button>
+        </div>
+        
+    </section>
+
+    <div id="cart" class="hidden">
+        <h2>Корзина</h2>
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Общая сумма: $0</p>
+        <button onclick="checkout()">Оформить заказ</button>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2024 Берсерк Все права защищены.</p>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="Dien.js"></script>
+</body>
+</html>

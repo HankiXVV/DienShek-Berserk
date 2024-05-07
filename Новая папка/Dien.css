@@ -1,0 +1,239 @@
+/* Стили для навигационного меню */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для заголовка и описания */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Стили для новостей */
+.news {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.news h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.news article h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.news article p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.news article a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news article a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    margin-top: auto; /* Располагаем футер внизу страницы */
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Стили для заголовка страницы */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Стили для секции с информацией о персонажах */
+.character-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.character {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.character img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.character h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.character p {
+    color: #777;
+}
+
+/* Стили для заголовка страницы */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Стили для секции с товарами */
+.store-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.product {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px ;
+}
+
+.product img {
+    width: 100%;
+    max-height: 980px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.description {
+    color: #777;
+}
+
+
+/* Стили для корзины */
+#cart {
+    border: 2px solid #333;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart.hidden {
+    display: none;
+}
+
+#cart h2 {
+    margin-bottom: 10px;
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#cart li {
+    margin-bottom: 5px;
+}
+
+#cart p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#cart button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#cart button:hover {
+    background-color: #555;
+}
+
+
+.nash {
+    display: flex;
+    
+}
